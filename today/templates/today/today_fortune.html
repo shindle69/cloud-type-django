@@ -1,0 +1,292 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>오늘의운세</title>
+</head>
+<body>
+    <img src= {% static '/images/taro_1.png' %} alt="logo" width="100">
+<h1>    
+    [용한띠별운세] 오늘의 운세
+</h1>
+<b>{{today_year}}년 {{today_month}}월 {{today_day}}일 {{weekday}}  (음력:{{lunar}}) {{gabja}} ({{hanja}})</b>     
+
+<hr/>
+<div>
+    <img src= {% static '/images/1_mouse.png' %} alt="mouse" width="100"> 
+    <p>
+         {{ dataset.one_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>60년생</b> : {{ dataset.one_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>72년생</b> : {{ dataset.one_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>84년생</b> : {{ dataset.one_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>96년생</b> : {{ dataset.one_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>08년생</b> : {{ dataset.one_year_5 }}</span>  
+    </li>
+</div>
+<br>
+<div>
+    <img src= {% static '/images/2_cow.png' %} alt="cow" width="100">
+    <p>
+        {{ dataset.two_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>61년생</b> : {{ dataset.two_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>73년생</b> : {{ dataset.two_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>85년생</b> : {{ dataset.two_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>97년생</b> : {{ dataset.two_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>09년생</b> : {{ dataset.two_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/3_tiger.png' %} alt="tiger" width="100">
+    <p>
+        {{ dataset.three_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit">62년생 : {{ dataset.three_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit">74년생 : {{ dataset.three_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit">86년생 : {{ dataset.three_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit">98년생 : {{ dataset.three_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit">2010년생 : {{ dataset.three_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/4_rabbit.png' %} alt="rabbit" width="100">
+    <p>
+        {{ dataset.two_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>51년생</b> : {{ dataset.four_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>63년생</b> : {{ dataset.four_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>75년생</b> : {{ dataset.four_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>87년생</b> : {{ dataset.four_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>99년생</b> : {{ dataset.four_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/5_dragon.png' %} alt="dragon" width="100">
+    <p>
+        {{ dataset.five_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>52년생</b> : {{ dataset.five_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>64년생</b> : {{ dataset.five_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>76년생</b> : {{ dataset.five_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>88년생</b> : {{ dataset.five_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>00년생</b> : {{ dataset.five_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/6_snake.png' %} alt="snake" width="100">
+    <p>
+        {{ dataset.six_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>53년생</b> : {{ dataset.six_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>65년생</b> : {{ dataset.six_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>77년생</b> : {{ dataset.six_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>89년생</b> : {{ dataset.six_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>01년생</b> : {{ dataset.six_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/7_horse.png' %} alt="horse" width="100">
+    <p>
+        {{ dataset.seven_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>54년생</b> : {{ dataset.seven_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>66년생</b> : {{ dataset.seven_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>78년생</b> : {{ dataset.seven_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>90년생</b> : {{ dataset.seven_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>02년생</b> : {{ dataset.seven_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/8_sheep.png' %} alt="sheep" width="100">
+    <p>
+        {{ dataset.eight_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>55년생</b> : {{ dataset.eight_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>67년생</b> : {{ dataset.eight_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>79년생</b> : {{ dataset.eight_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>91년생</b> : {{ dataset.eight_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>03년생</b> : {{ dataset.eight_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/9_monkey.png' %} alt="monkey" width="100">
+    <p>
+        {{ dataset.nine_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>56년생</b> : {{ dataset.nine_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>68년생</b> : {{ dataset.nine_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>80년생</b> : {{ dataset.nine_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>92년생</b> : {{ dataset.nine_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>04년생</b> : {{ dataset.nine_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/10_chicken.png' %} alt="chicken" width="100">
+    <p>
+        {{ dataset.ten_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>57년생</b> : {{ dataset.ten_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>69년생</b> : {{ dataset.ten_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>81년생</b> : {{ dataset.ten_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>93년생</b> : {{ dataset.ten_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>05년생</b> : {{ dataset.ten_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/11_dog.png' %} alt="dog" width="100">
+    <p>
+        {{ dataset.eleven_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>58년생</b> : {{ dataset.eleven_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>70년생</b> : {{ dataset.eleven_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>82년생</b> : {{ dataset.eleven_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>94년생</b> : {{ dataset.eleven_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>06년생</b> : {{ dataset.eleven_year_5 }}</span>  
+    </li>
+</div>
+
+<br>
+<div>
+    <img src= {% static '/images/12_pig.png' %} alt="pig" width="100">
+    <p>
+        {{ dataset.twelve_total }}
+    </p>
+    <li style="list-style:none;">
+        <span class="tit"><b>59년생</b> : {{ dataset.twelve_year_1 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>71년생</b> : {{ dataset.eleven_year_2 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>83년생</b> : {{ dataset.eleven_year_3 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>95년생</b> : {{ dataset.eleven_year_4 }}</span>  
+    </li>
+    <li style="list-style:none;">
+        <span class="tit"><b>07년생</b> : {{ dataset.eleven_year_5 }}</span>  
+    </li>
+</div>
+<hr/>
+</body>
+</html>
